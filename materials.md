@@ -20,5 +20,11 @@
  
  ## Buildings
  - Riehl House
- - 
- 
+ - Barcelona Pavilion
+ - Villa Tugendhat
+ - Lemke House
+ - Farnsworth House
+ - S. R. Crown Hall
+ - Seagram Building
+ - Neue Nationalgalerie
+ - Martin Luther King Jr. Memorial Library 

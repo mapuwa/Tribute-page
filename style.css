@@ -40,9 +40,11 @@ p {
     font-size: 1.1em;
     text-align: justify;
 }
-
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
 /* Header */
-
 .header h1 {
     font-size: 3.5em;
     margin: 1.6em auto 0.2em auto;
@@ -54,14 +56,12 @@ p {
     width: 60vw;
 }
 .header p {
+    font-size: 1.2em;
     max-width: 900px;
     margin: 3em auto;
 }
 
 /*Work */
-.work h1 {
-    font-size: 2.5em;
-}
 .worklist {
     list-style: none;
 }
@@ -69,16 +69,20 @@ p {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    padding-bottom: 4em;
 }
 .worklist__image img {
     width: 60vw;
 }
+.worklist__description h2{
+    margin: 0;
+}
 .worklist__description p{
-    padding: 0 5vw;
+    padding: 0 7vw;
     font-size: 1em;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 900px) {
     .worklist li {
         flex-direction: row;
     }
@@ -92,6 +96,13 @@ p {
         flex: 5;
     }
 }
+
+/*Quotes */
+.quotes {
+
+}
+
+
 
 @media (min-width: 1200px) {
     .header img {
