@@ -1,0 +1,51 @@
+html {
+    background: #ffffff;
+}
+body {
+    margin: 10px;
+    padding: 0px 1vw;
+    font-family: 'Raleway', sans-serif; /* 'Josefin Sans', */
+    /* Vertical border lines*/
+    background: url('vert.png') repeat-y top left,
+                url('vert.png') repeat-y right -60vw;
+    background-size: auto 90vw;
+}
+/* Horizontal border lines*/
+body::before, body::after {
+    display: block;
+    content: '';
+    background: url('horiz.png') repeat-x 0 -3px;
+    height: 2vw;
+    background-size: 90vw;
+}
+body::after {
+    background: url('horiz.png') repeat-x 0 1vw;
+}
+
+.container {
+    min-height: 90vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    font-weight: 400;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    margin: 1.6em auto 0.2em auto;
+}
+header h2 {
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 3em;
+}
+header img {
+    width: 60vw;
+}
+@media (min-width: 1200px) {
+    header img {
+        width: 50vw;
+    }
+}
