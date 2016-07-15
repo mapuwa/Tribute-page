@@ -4,7 +4,6 @@ html {
 body {
     margin: 10px;
     padding: 0px 1vw;
-    font-family: 'Raleway', sans-serif; /* 'Josefin Sans', */
     /* Vertical border lines*/
     background: url('vert.png') repeat-y top left,
                 url('vert.png') repeat-y right -60vw;
@@ -23,29 +22,82 @@ body::after {
 }
 
 .container {
+    text-align: center;
     min-height: 90vh;
-    padding: 20px;
+    padding: 0 40px;
 }
 
-header {
-    text-align: center;
+/* Typography */
+body {
+    font-family: 'Lora', serif;
 }
-header h1 {
-    font-weight: 400;
-    font-size: 3.5em;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif; /* 'Josefin Sans', */
     text-transform: uppercase;
+    font-weight: 400;
+}
+p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+/* Header */
+
+.header h1 {
+    font-size: 3.5em;
     margin: 1.6em auto 0.2em auto;
 }
-header h2 {
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 3em;
+.header h2 {
+    margin: 0 auto 3em auto;
 }
-header img {
+.header img {
     width: 60vw;
 }
+.header p {
+    max-width: 900px;
+    margin: 3em auto;
+}
+
+/*Work */
+.work h1 {
+    font-size: 2.5em;
+}
+.worklist {
+    list-style: none;
+}
+.worklist li {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.worklist__image img {
+    width: 60vw;
+}
+.worklist__description p{
+    padding: 0 5vw;
+    font-size: 1em;
+}
+
+@media (min-width: 750px) {
+    .worklist li {
+        flex-direction: row;
+    }
+    .worklist__image img {
+        width: 100%;
+    }
+    .worklist__image {
+        flex: 3;
+    }
+    .worklist__description {
+        flex: 5;
+    }
+}
+
 @media (min-width: 1200px) {
-    header img {
+    .header img {
         width: 50vw;
+    }
+    .worklist__description p{
+        font-size: 1.1em;
     }
 }
