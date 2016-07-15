@@ -24,7 +24,7 @@ body::after {
 .container {
     text-align: center;
     min-height: 90vh;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 /* Typography */
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-size: 1.1em;
-    text-align: justify;
+    text-align: left;
 }
 h1 {
     font-size: 2.5em;
@@ -63,6 +63,7 @@ h1 {
 
 /*Work */
 .worklist {
+    padding: 0;
     list-style: none;
 }
 .worklist li {
@@ -78,11 +79,14 @@ h1 {
     margin: 0;
 }
 .worklist__description p{
-    padding: 0 7vw;
+    padding: 0 3vw;
     font-size: 1em;
 }
 
 @media (min-width: 900px) {
+    p {
+        text-align: justify;
+    }
     .worklist li {
         flex-direction: row;
     }
@@ -95,16 +99,43 @@ h1 {
     .worklist__description {
         flex: 5;
     }
+
+    .quotes img {
+        position: relative;
+        left: 150px;
+    }
 }
 
 /*Quotes */
-.quotes {
-
+.quotes h1 {
+    margin-bottom: 1em;
+}
+.quotes div {
+    min-height: 200px;
+    transition: all 1.3s ease-out;
+}
+.quotes span {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif; /* 'Josefin Sans', */
+}
+.quotes img {
+    margin-top: 20px;
+    width: 200px;
 }
 
-
+.pre-animation {
+    opacity: 0;
+}
+/* Footer */
+footer h1 {
+    font-size: 1.6em;
+}
 
 @media (min-width: 1200px) {
+    .worklist {
+        padding: 0 8vw;
+    }
     .header img {
         width: 50vw;
     }

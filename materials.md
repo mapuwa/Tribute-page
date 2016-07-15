@@ -18,7 +18,7 @@
  - I thought a lot and I controlled my thoughts in my work - and I controlled my work through my thoughts.
  - Not yesterday, not tomorrow, only today can be given form. Only this architecture creates.
  
- ## Buildings
+## Buildings
  - Riehl House
  - Barcelona Pavilion
  - Villa Tugendhat
