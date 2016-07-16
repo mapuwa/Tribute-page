@@ -5,20 +5,20 @@ body {
     margin: 10px;
     padding: 0px 1vw;
     /* Vertical border lines*/
-    background: url('vert.png') repeat-y top left,
-                url('vert.png') repeat-y right -60vw;
+    background: url('https://mapuwa.github.io/Tribute-page/images/vert.png') repeat-y top left,
+                url('https://mapuwa.github.io/Tribute-page/images/vert.png') repeat-y right -60vw;
     background-size: auto 90vw;
 }
 /* Horizontal border lines*/
 body::before, body::after {
     display: block;
     content: '';
-    background: url('horiz.png') repeat-x 0 -3px;
+    background: url('https://mapuwa.github.io/Tribute-page/images/horiz.png') repeat-x 0 -3px;
     height: 2vw;
     background-size: 90vw;
 }
 body::after {
-    background: url('horiz.png') repeat-x 0 1vw;
+    background: url('https://mapuwa.github.io/Tribute-page/images/horiz.png') repeat-x 0 1vw;
 }
 
 .container {
